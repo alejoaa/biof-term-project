@@ -1,0 +1,13 @@
+channels:
+  - anaconda
+  - conda-forge
+  - bioconda
+dependencies:
+  - r-base =3.2.2
+  - bioconductor-genomicfeatures =1.22.13
+  - bioconductor-deseq2 =1.10.1
+  - bioconductor-rtracklayer =1.30.1
+  - r-gplots =2.17.0
+  - snakemake =3.13.3
+  - star =2.7.6
+  - sra-tools =2.8.0

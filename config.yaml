@@ -1,0 +1,18 @@
+samples:
+  - SRR1543294
+  - SRR1543295
+  - SRR1543323
+  - SRR1543324
+  - SRR1543388
+  - SRR1543389
+  - SRR1543509
+  - SRR1543514
+  - SRR1543523
+  - SRR1543537
+  - SRR1543564
+  - SRR1543580
+samples-table:
+    samples-table.tsv
+reference:
+  fasta: ftp://ftp.ensembl.org/pub/release-62//fasta/drosophila_melanogaster/dna/Drosophila_melanogaster.BDGP5.25.62.dna.toplevel.fa.gz
+  gtf: ftp://ftp.ensembl.org/pub/release-62//gtf/drosophila_melanogaster/Drosophila_melanogaster.BDGP5.25.62.gtf.gz
