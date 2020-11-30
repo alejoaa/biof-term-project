@@ -1,29 +1,33 @@
 #!/usr/bin/env R
 
+r = getOption("repos")
+r["CRAN"] = "http://cran.us.r-project.org"
+options(repos = r)
+
 # Install packages
 if (!requireNamespace("BiocManager", quietly = TRUE))
 install.packages("BiocManager")
 
 if (!requireNamespace("GenomicFeatures", quietly = TRUE))
-BiocManager::install("GenomicFeatures")
+    BiocManager::install("GenomicFeatures")
 
 if (!requireNamespace("Rsamtools", quietly = TRUE))
-BiocManager::install("Rsamtools")
+    BiocManager::install("Rsamtools")
 
 if (!requireNamespace("GenomicAlignments", quietly = TRUE))
-BiocManager::install("GenomicAlignments")
+    BiocManager::install("GenomicAlignments")
 
 if (!requireNamespace("BiocParallel", quietly = TRUE))
-BiocManager::install("BiocParallel")
+    BiocManager::install("BiocParallel")
 
 if (!requireNamespace("rtracklayer", quietly = TRUE))
-BiocManager::install("rtracklayer")
+    BiocManager::install("rtracklayer")
 
 if (!requireNamespace("DESeq2", quietly = TRUE))
-BiocManager::install("DESeq2")
+    BiocManager::install("DESeq2")
 
 if (!requireNamespace("gplots", quietly = TRUE))
-install.packages("gplots")
+    install.packages("gplots")
 
 # Import packages
 suppressMessages(library("Rsamtools"))
