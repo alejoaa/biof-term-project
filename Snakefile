@@ -7,10 +7,10 @@ configfile: "config.yaml"
 rule all:
 	input:
 		r_image="results/image.Rdata",
-		dendogram="results/dendogram.pdf",
-		pca="results/pca.pdf",
+		dendogram="results/dendogram.png",
+		pca="results/pca.png",
 		dge_table="results/topgenes.csv",
-		ma_plot="results/ma_plot.pdf"
+		ma_plot="results/ma_plot.png"
 
 rule fasterq_dump:
 	output:
@@ -108,9 +108,9 @@ rule exp_analysis:
 		gtf="reference/gtf/genome.gtf"
 	output:
 		r_image="results/image.Rdata",
-		dendogram="results/dendogram.pdf",
-		pca="results/pca.pdf",
+		dendogram="results/dendogram.png",
+		pca="results/pca.png",
 		dge_table="results/topgenes.csv",
-		ma_plot="results/ma_plot.pdf"
+		ma_plot="results/ma_plot.png"
 	script:
 		"scripts/exp-analysis.R"	

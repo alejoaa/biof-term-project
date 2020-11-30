@@ -98,12 +98,12 @@ hc <- hclust(d)
 
 # Plot dendogram
 dend = as.dendrogram(hc)
-pdf(snakemake@output[["dendogram"]])
+png(snakemake@output[["dendogram"]])
 plot(dend)
 dev.off()
 
 # PCA
-pdf(snakemake@output[["pca"]])
+png(snakemake@output[["pca"]])
 plotPCA(rld, intgroup = "Environment")
 dev.off()
 
@@ -117,7 +117,7 @@ topDESeq2 <- resDSort[1:395,]
 write.csv(topDESeq2, file=snakemake@output[["dge_table"]])
 
 # MA plot
-pdf(file=snakemake@output[["ma_plot"]])
+png(file=snakemake@output[["ma_plot"]])
 plotMA(resD, ylim=c(-7,7))
 dev.off()
 
