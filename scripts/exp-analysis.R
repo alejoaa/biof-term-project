@@ -85,7 +85,7 @@ colnames(se) <- samples_table$Accession
 
 cat("- Performing DGE\n")
 # Build DESeq Data set
-dds <- DESeqDataSet(se, design= ~ Enviroment)
+dds <- DESeqDataSet(se, design= ~ Environment)
 
 # Regularized log ratio
 rld <- rlog(dds)
@@ -104,7 +104,7 @@ dev.off()
 
 # PCA
 pdf(snakemake@output[["pca"]])
-plotPCA(rld, intgroup = "Enviroment")
+plotPCA(rld, intgroup = "Environment")
 dev.off()
 
 # Generate results table
