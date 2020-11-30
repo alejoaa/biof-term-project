@@ -6,4 +6,4 @@ dependencies:
   - conda-forge::r-base =4.0.3
   - anaconda::pip =20.2.4
   - bioconda::star =2.7.6
-  - sra-tools::sra-tools =2.8.0
+  - bioconda::sra-tools =2.8.0
