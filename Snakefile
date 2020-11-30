@@ -2,7 +2,6 @@ from snakemake.remote.FTP import RemoteProvider as FTPRemoteProvider
 FTP = FTPRemoteProvider()
 
 configfile: "config.yaml"
-# SAMPLES=["SRR1543136", "SRR1543137"]
 
 # All rule
 rule all:
